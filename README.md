@@ -35,5 +35,15 @@ For longer text, it is recommended to split it into multiple `.tex` files (e.g. 
 \input{q1} % include ./q1.tex file
 ```
 
+### Include code
+To include code with the help of `minted` package, install `Pygments` at first:
+```
+pip install Pygments
+```
+and add the `-shell-escape` compilation parameter to `latexmk`:
+```
+echo "\$pdflatex='pdflatex -shell-escape';" > ~/.latexmkrc
+```
+
 ## .gitignore
 Use `.gitignore` to ignore unnecessary file commits to the git repository.

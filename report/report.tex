@@ -1,0 +1,54 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xifthen}
+\usepackage{xparse}
+\usepackage{dsfont}
+\usepackage{xcolor}
+\usepackage{fullpage}
+\usepackage{minted} 
+\usemintedstyle{friendly} 
+\usepackage{graphicx}  
+\usepackage{cleveref} 
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+% Left-right bracket
+\newcommand{\lr}[1]{\left (#1\right)}
+
+% Left-right square bracket
+\newcommand{\lrs}[1]{\left [#1 \right]}
+
+% Left-right curly bracket
+\newcommand{\lrc}[1]{\left \{#1\right\}}
+
+% Left-right absolute value
+\newcommand{\lra}[1]{\left |#1\right|}
+
+% Left-right upper value
+\newcommand{\lru}[1]{\left \lceil#1\right\rceil}
+
+% Scalar product
+\newcommand{\vp}[2]{\left \langle #1 , #2 \right \rangle}
+
+
+\begin{document}
+\title{Assignment Title}
+\author{Your Name (Your ID)}
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+This is introduction part.
+
+\section{Main content}
+\input{q1}
+
+\section{Conclusion}
+This is conclusion part.
+\end{document}
